@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  lakefs:
+    image: treeverse/lakefs:latest
+    container_name: lakefs
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
